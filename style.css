@@ -187,3 +187,10 @@ details.more summary { cursor: pointer; font-family: var(--font-mono); font-size
   .trace::after { animation: arrive 900ms cubic-bezier(.2,.7,.2,1) both; }
   @keyframes arrive { from { left: 0; } }
 }
+
+/* ---------- BibTeX ---------- */
+button.chip { font-family: var(--font-mono); cursor: pointer; line-height: inherit; }
+.bib-toggle[aria-expanded="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.bib { margin-top: 10px; position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; }
+.bib pre { margin: 0; padding: 14px 16px; padding-right: 5.5rem; overflow-x: auto; font: 400 0.8rem/1.55 var(--font-mono); color: var(--ink); }
+.bib .copy-bib { position: absolute; top: 8px; right: 8px; }
